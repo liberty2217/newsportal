@@ -13,7 +13,7 @@ export function LoginForm({Login, error}) {
     return (
         <form onSubmit={submitHandler}>
             <div className='form-inner'>
-                
+                <h1>Newsportal</h1>
                 <h2>Login</h2>
                 {(error != '') ? ( <div className="error">{error}</div>) : ''}
                
@@ -33,6 +33,8 @@ export function LoginForm({Login, error}) {
                 </div>
 
                 <input type='submit' value='LOGIN'/> 
+                
+                <div className='hint'>Enter any name. Email: admin@admin.com. Password: admin123</div>
 
             </div>
         </form>
